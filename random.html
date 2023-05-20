@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Noise Aesthetics
+		</title> 
+		<!-- <link rel="stylesheet" href="style.css?v=2.0"> --> 
+		<link rel="stylesheet" href="style.css"> 
+		<link rel="icon" href="icon.png">
+
+        <style>
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                
+            }
+
+            .text-with-background {
+                position: relative;
+            }
+
+            .text-with-background img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: -1;
+            }
+
+        </style>
+
+	</head>
+
+
+	<body>
+	
+		<br>
+	
+		<p>
+			<a href="index.html">Noise&nbsp;Aesthetics </a> |&nbsp;<i>Random</i>
+		</p>
+		
+		<br>
+		
+		<p>
+			..random, with an underlying hope. 
+            A curve made in time, will I go up or down; as for overall I'm going down.	
+		</p>
+		
+        <p><a href="https://youtu.be/QOFdfsBPOP4" target="blank"><img src="stochastic.gif", alt="Stochastic" ></a></p>
+
+        <p>
+            <a href="https://www.sidefx.com/docs/houdini/nodes/sop/solver.html" target="blank">
+                "[The Solver geometry node allows] ..running a SOP network iteratively over some input geometry, 
+                with the output of the network from the previous frame serving as the input for the network at the current frame."
+                <br>
+            </a>
+            <i>
+                The solve creates a one dimensional stochastic process. To evolve the process depends only on its current state 
+                at each time similar to how e.g. landscapes and wind waves evolve over topological space.
+            </i>
+        </p>
+ 
+        <br>
+
+        <div class="container">
+            <div class="text-with-background">
+                <p>
+                    The next step. 
+                    Where do I go from here? 
+                    The options form an area, a radius around me. 
+                    What I end up doing is random, with an underlying hope.
+                </p>
+              <img src="hope.gif" alt="Hoping..">
+            </div>
+          </div>
+
+        <!--
+        <p><a href="" target="blank"><img src="hope5.gif", alt="Hope" ></a></p>
+        -->
+
+		<br><br><br><br><br><br><br><br>
+		
+		<div id="includedContent"></div>
+
+		<script>
+		  // Use JavaScript to include HTML content
+		  fetch('menu.html')
+			.then(response => response.text())
+			.then(data => {
+			  document.getElementById('includedContent').innerHTML = data;
+			})
+			.catch(error => {
+			  console.error('Error:', error);
+			});
+		</script>
+	
+	</body>
+	
+	
+
+</html>
