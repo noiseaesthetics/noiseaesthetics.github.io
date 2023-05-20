@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- <link rel="stylesheet" href="style.css?v=2.0"> --> 
+		<link rel="stylesheet" href="style.css"> 
+		<link rel="icon" href="icon.png">
+		<title>
+			Noise Aesthetics
+		</title> 
+		
+	</head>
+
+	<body>
+	
+		<br>
+	
+		<p>
+			<pbg><a href="index.html">&nbsp;Noise&nbsp;Aesthetics </a> |&nbsp;<i>Wind Study 02&nbsp;</i></pbg>
+		</p>
+
+        <br>
+		
+		<p>Have you ever lied under a tree on a windy summer day?</p>
+		
+        <br><br><br><br><br><br><br><br>
+		
+		<div id="includedContent"></div>
+
+		<script>
+			// Use JavaScript to include HTML content
+			fetch('menu.html')
+			  .then(response => response.text())
+			  .then(data => {
+				document.getElementById('includedContent').innerHTML = data;
+			  })
+			  .catch(error => {
+				console.error('Error:', error);
+			  });
+		  </script>
+
+	</body>
+
+
+
+</html>

@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Noise Aesthetics
+		</title> 
+		<!-- <link rel="stylesheet" href="style.css?v=2.0"> --> 
+		<link rel="stylesheet" href="style.css"> 
+		<link rel="icon" href="icon.png">
+	</head>
+
+	<body>
+	
+		<br>
+	
+		<p>
+			<a href="index.html" style="text-decoration: none; font-style: normal;" onmouseover="this.style.textDecoration='none'; this.style.fontStyle='italic';" onmouseout="this.style.textDecoration='none'; this.style.fontStyle='normal';">Noise&nbsp;Aesthetics </a> |&nbsp;<i>noiseaesthetics@gmail.com</i>
+		</p>
+
+		<br>
+
+		<style>
+			a:hover {
+				text-decoration: underline;
+				font-style: normal;
+			}
+		</style>
+
+		<p>
+			<a href="index.html"> Noise Aesthetics </a>
+			<a href="windstudy01.html"> Wind Study 01 </a>
+			<a href="windstudy02.html"> Wind Study 02 </a> 
+			<a href="tpad.html"> The Plants are Dying </a>
+			<a href="icestorm.html"> Icestorm </a>
+		</p>
+		<br>
+		
+		<p style="ikons">
+			<a href="https://www.instagram.com/noise.aesthetics/" target="_blank"><img src="instagram.png" alt="instagram" class="link"></a>
+			<a href="https://www.youtube.com/channel/UCczdNzfxjrx61ViXAAbRzIg" target="_blank"><img src="youtube.png" alt="youtube" class="link"></a>
+		</p>
+	
+		<div id="includedContent"></div>
+
+		<script>
+			// Use JavaScript to include HTML content
+			fetch('menu.html')
+			  .then(response => response.text())
+			  .then(data => {
+				document.getElementById('includedContent').innerHTML = data;
+			  })
+			  .catch(error => {
+				console.error('Error:', error);
+			  });
+		  </script>
+		
+	</body>
+
+
+
+</html>
