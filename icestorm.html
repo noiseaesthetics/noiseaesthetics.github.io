@@ -5,6 +5,30 @@
 		<!-- <link rel="stylesheet" href="style.css?v=2.0"> --> 
 		<link rel="stylesheet" href="style.css"> 
 		<link rel="icon" href="icon.png">
+		<style>
+			
+			.image-container {
+  				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			@media screen and (min-width: 560px) {
+				.scaled-image {
+					width: 560px;
+				}
+			.image-container {
+  				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				max-width: 2000px;
+				margin: 0 auto;
+			}
+
+		}
+		</style>
 		<title>
 			Noise Aesthetics
 		</title> 
@@ -26,9 +50,20 @@
 		In the night the ice started melting, the trees started crying. I heard the drops hit the roof of the car on the way home. My place didn't lose power.
 		</p>		
 
-		<p><img src="icestorm2.png", alt="Icestorm"></p>
-		<p><img src="icestorm3.png", alt="Icestorm"></p>
+		
+		<div class="image-container">
+				<img src="icestorm2.png" alt="Icestorm" class="scaled-image">
+				<img src="icestorm3.png" alt="Icestorm" class="scaled-image">
+				<img src="icestorm4.png" alt="Icestorm" class="scaled-image">
+		</div>
+		
 
+		<br><br><br><br><br><br><br><br><br>
+
+		<p>
+			<a href="icestorm_montreal_2023.html" target="blank"> Montreal icestorm, April 2023</a>
+		</p>
+		
 		<!--
 		<p><a href="https://www.sidefx.com/docs/houdini/nodes/sop/lsystem.html", target="blank">
 			"There are several factors which combine to organize plant structures and contribute to their beauty. [...] 
