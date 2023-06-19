@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="style.css?v=2.0"> --> 
+		<link rel="stylesheet" href="style.css"> 
+		<link rel="icon" href="icon.png">
+		<style>
+			 .center-image img {
+				width: 560px;
+				position: relative;
+			
+			  }
+			  .center-image {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				overflow-x: hidden;
+				margin-top: 5%;
+				margin-bottom: 5%;
+			  }
+		</style>
+
+		<title>
+			Noise Aesthetics
+		</title> 
+		
+	</head>
+
+	<body>
+	
+		<br>
+	
+		<p>
+			<a href="index.html">&nbsp;Noise&nbsp;Aesthetics </a>|&nbsp;</a><a><i>Fluid&nbsp;Study&nbsp;01&nbsp;</i></a>
+		</p>
+
+        <br>
+
+		<p>
+				A cross section of a smoke simulation, like a flag blowing in the wind—or a river. 
+                <br>
+                They are turbulent fluid flows that interact with each other and materials, 
+				infinitely complex in perfect balance. 
+		</p>
+
+		<div class="center-image">
+			<a href="fluidstudy01.gif" target="blank"><img src="fluidstudy01.gif" alt="Fluid"></a>
+		</div>
+
+		<br>
+
+        <br><br><br><br><br><br><br><br>
+		
+		<div id="includedContent"></div>
+		<script>
+			// Use JavaScript to include HTML content
+			fetch('menu.html')
+			  .then(response => response.text())
+			  .then(data => {
+				document.getElementById('includedContent').innerHTML = data;
+			  })
+			  .catch(error => {
+				console.error('Error:', error);
+			  });
+		</script>
+
+	</body>
+
+
+
+</html>
